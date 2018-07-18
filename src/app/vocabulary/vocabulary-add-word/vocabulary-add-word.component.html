@@ -1,0 +1,14 @@
+<div>
+  <form (ngSubmit)="addWord()" #f="ngForm">
+    <div class="word-input">
+      <div>
+        <label>Add a new word:</label>
+        <input
+          ngModel
+          name = "word"
+        />
+      </div>
+      <button id="btnAddWord" type="submit">Add</button>
+    </div>
+  </form>
+</div>

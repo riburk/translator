@@ -1,0 +1,14 @@
+
+<div class="container">
+  <!--Row with three equal columns-->
+  <h4 class="row">
+    <div class="col-md-1">#</div>
+    <div class="col-md-2">Word</div>
+    <div class="col-md-2">Translation</div>
+  </h4>
+  <app-vocabulary-item
+    *ngFor="let vocabEl of vocabularyItems; let i = index"
+    [vocab]="vocabEl"
+    [index]="i">
+  </app-vocabulary-item>
+</div>
