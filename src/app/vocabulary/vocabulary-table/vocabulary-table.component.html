@@ -1,0 +1,19 @@
+<div class="example-container mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="word">
+      <th mat-header-cell *matHeaderCellDef> English </th>
+      <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="translation">
+      <th mat-header-cell *matHeaderCellDef> French </th>
+      <td mat-cell *matCellDef="let element"> {{element.translation}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
