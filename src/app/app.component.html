@@ -1,10 +1,15 @@
 <h1 align="center">
   {{title}}
 </h1>
+<ul>
+<li><a routerLink="/add">Add Word</a></li>
+<li><a routerLink="/list">List Words</a></li>
+</ul>
 <br><br>
-<div class="container">
-<app-vocabulary-add-word></app-vocabulary-add-word>
-</div>
-<br><br>
+<!--<div class="container">-->
+<!--<app-vocabulary-add-word></app-vocabulary-add-word>-->
+<!--</div>-->
+<!--<br><br>-->
 <!--<app-vocabulary-list></app-vocabulary-list>-->
-<app-vocabulary-table></app-vocabulary-table>
+<!--<app-vocabulary-table></app-vocabulary-table>-->
+<router-outlet></router-outlet>

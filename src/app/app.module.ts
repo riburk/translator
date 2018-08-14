@@ -11,6 +11,7 @@ import { VocabularyItemComponent } from './vocabulary/vocabulary-item/vocabulary
 import { VocabularyService } from './vocabulary/vocabulary.service';
 import { VocabularyAddWordComponent } from './vocabulary/vocabulary-add-word/vocabulary-add-word.component';
 import { VocabularyTableComponent } from './vocabulary/vocabulary-table/vocabulary-table.component';
+import { AppRouterModule } from './app-router.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { VocabularyTableComponent } from './vocabulary/vocabulary-table/vocabula
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    AppRouterModule
   ],
   providers: [VocabularyService],
   bootstrap: [AppComponent]
